@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>نموذج الإبلاغ عن واقعة OVR</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 0;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 15px;
+      }
+
+      input, select, textarea, button {
+        font-size: 15px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<form action="https://script.google.com/macros/s/AKfycbxYF83WsiiPkHu_xhn7KU2uQ6JolGbuhJdFN1Oz-xalwyyBU0e-pNaTDX2MRXT6V98Q/exec" method="post">
+  <h2>نموذج الإبلاغ عن واقعة OVR</h2>
+
+  <label for="hospital_name">اسم المستشفى</label>
+  <select id="hospital_name" name="اسم المستشفى">
+    <option value="مستشفى الجراحة الجديد">مستشفى الجراحة الجديد</option>
+    <option value="مستشفى الطوارئ">مستشفى الطوارئ</option>
+    <option value="مستشفى الباطنة">مستشفى الباطنة</option>
+    <option value="العيادات الخارجية">العيادات الخارجية</option>
+    <option value="مستشفى النسا والولادة">مستشفى النسا والولادة</option>
+  </select>
+
+  <label for="reporter_type">نوع المُبلِّغ</label>
+  <select id="reporter_type" name="نوع المُبلِّغ">
+    <option value="مريض">مريض</option>
+    <option value="زائر">زائر</option>
+    <option value="دكتور">دكتور</option>
+    <option value="صيدلي">صيدلي</option>
+    <option value="ممرض">ممرض</option>
+    <option value="فني">فني</option>
+    <option value="موظف">موظف</option>
+  </select>
+
+  <label for="reporter_name">الاسم</label>
+  <input type="text" id="reporter_name" name="الاسم" />
+
+  <label for="phone">رقم الهاتف</label>
+  <input type="tel" id="phone" name="رقم الهاتف" />
+
+  <label for="incident_datetime">تاريخ ووقت الواقعة</label>
+  <input type="datetime-local" id="incident_datetime" name="تاريخ ووقت الواقعة" />
+
+  <label for="incident_location">مكان الواقعة</label>
+  <select id="incident_location" name="مكان الواقعة">
+    <option value="عمليات أ">عمليات أ</option>
+    <option value="عمليات ب">عمليات ب</option>
+    <option value="عناية الثاني">عناية الثاني</option>
+    <option value="عناية الثالث">عناية الثالث</option>
+    <option value="عناية زرع الكبد">عناية زرع الكبد</option>
+    <option value="وحدة زرع الكبد">وحدة زرع الكبد</option>
+    <option value="قسم الجراحة">قسم الجراحة</option>
+    <option value="قسم الروماتيزم">قسم الروماتيزم</option>
+    <option value="قسم جراحة المسالك البولية">قسم جراحة المسالك البولية</option>
+    <option value="قسم مخ واعصاب باطنة">قسم مخ واعصاب باطنة</option>
+    <option value="قسم جراحة المخ والاعصب والعمود الفقري">قسم جراحة المخ والاعصب والعمود الفقري</option>
+    <option value="قسم جراحة اذن وانف وحنجرة">قسم جراحة اذن وانف وحنجرة</option>
+    <option value="قسم جراحة النسا">قسم جراحة النسا</option>
+    <option value="صيدلية العلاج المجاني">صيدلية العلاج المجاني</option>
+    <option value="صيدلية العلاج الاقتصادي">صيدلية العلاج الاقتصادي</option>
+    <option value="صيدلية المستلزمات المجاني">صيدلية المستلزمات المجاني</option>
+    <option value="صيدلية المستلزمات الاقتصادي">صيدلية المستلزمات الاقتصادي</option>
+    <option value="صيدلية العناية والعمليات">صيدلية العناية والعمليات</option>
+    <option value="الصيدلية المركزية">الصيدلية المركزية</option>
+    <option value="قسم الاشعة والقسطرة">قسم الاشعة والقسطرة</option>
+    <option value="وحدة السمعيات">وحدة السمعيات</option>
+    <option value="أخرى">أخرى</option>
+  </select>
+
+  <label for="error_type">نوع الخطأ</label>
+  <select id="error_type" name="نوع الخطأ">
+    <option value="دوائي">دوائي</option>
+    <option value="جراحي">جراحي</option>
+    <option value="تحاليل">تحاليل</option>
+    <option value="نقل الدم">نقل الدم</option>
+    <option value="الاشعة او العمل">الاشعة او العمل</option>
+    <option value="اصابة المريض">اصابة المريض</option>
+    <option value="اصابة موظف او زائر">اصابة موظف او زائر</option>
+    <option value="سقوط">سقوط</option>
+    <option value="مخالفة المعايير الوقائية">مخالفة المعايير الوقائية</option>
+    <option value="خطأ بالملف الطبي">خطأ بالملف الطبي</option>
+    <option value="شكاوى المرضى">شكاوى المرضى</option>
+    <option value="سلامة المرضى">سلامة المرضى</option>
+    <option value="سلوك">سلوك</option>
+    <option value="أخرى">أخرى</option>
+  </select>
+
+  <label for="incident_description">وصف الواقعة</label>
+  <textarea id="incident_description" name="وصف الواقعة" rows="4"></textarea>
+
+  <label for="recommendations">التوصيات أو الإجراءات المقترحة</label>
+  <textarea id="recommendations" name="التوصيات أو الإجراءات المقترحة" rows="3"></textarea>
+
+  <button type="submit">إرسال</button>
+</form>
+
+</body>
+</html>
